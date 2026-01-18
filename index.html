@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- BASIC SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raza Digital Center | CSC Services in Pilibhit, Uttar Pradesh</title>
+
+    <meta
+      name="description"
+      content="Raza Digital Center provides CSC services in Pilibhit, Uttar Pradesh. PAN Card, Aadhaar, Ayushman Card, Banking, Online Forms, Certificates, Ticket Booking & Government Digital Services."
+    />
+    <meta
+      name="keywords"
+      content="CSC Pilibhit, Raza Digital Center, PAN Card, Aadhaar, Ayushman Card, Banking Services, Online Forms, Government Services, Uttar Pradesh"
+    />
+    <meta name="author" content="Raza Digital Center" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Raza Digital Center - CSC Services" />
+    <meta
+      property="og:description"
+      content="Government & Digital Services at Your Doorstep in Pilibhit, Uttar Pradesh."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- LOCAL BUSINESS SCHEMA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Raza Digital Center",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Near Zam Zam Hotel, Mahauf Road",
+          "addressLocality": "Neoria Husainpur",
+          "addressRegion": "Uttar Pradesh",
+          "addressCountry": "IN"
+        },
+        "telephone": "+919719731698"
+      }
+    </script>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ===============================
+  ROOT COLORS
+================================= */
+      :root {
+        --blue: #0a3d91;
+        --green: #1fa84f;
+        --orange: #ff9933;
+        --dark: #1c1c1c;
+        --light: #f4f7fb;
+        --white: #ffffff;
+      }
+
+      /* ===============================
+  GLOBAL
+================================= */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Segoe UI", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* ===============================
+  NAVBAR
+================================= */
+      .navbar {
+        background: white;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .brand-text {
+        font-size: 1.3rem;
+        color: var(--green);
+        font-weight: 700;
+      }
+
+      .nav-link {
+        font-weight: 600;
+        color: var(--blue) !important;
+        margin-left: 15px;
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        left: 0;
+        bottom: -6px;
+        background: var(--green);
+        transition: 0.3s;
+        border-radius: 10px;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .nav-link:hover {
+        color: var(--green) !important;
+      }
+
+      .nav-link.active {
+        color: var(--orange) !important;
+      }
+
+      /* Mobile Navbar */
+      @media (max-width: 991px) {
+        .navbar-collapse {
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          margin-top: 10px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-link {
+          margin: 10px 0;
+          text-align: center;
+        }
+      }
+
+      /* ===============================
+  HERO
+================================= */
+      .hero-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background:
+          linear-gradient(rgba(10, 61, 145, 0.75), rgba(10, 61, 145, 0.75)),
+          url("./bg-image.jpeg") center/cover no-repeat;
+        color: white;
+      }
+
+      .hero-section h1 {
+        color: var(--orange);
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .hero-section p {
+        max-width: 700px;
+        margin: 15px auto;
+        font-size: 1.2rem;
+      }
+
+      .hero-section .btn {
+        padding: 12px 30px;
+        border-radius: 30px;
+      }
+
+      /* ===============================
+  SERVICES
+================================= */
+      .service-card {
+        border-top: 5px solid var(--green);
+        transition: 0.3s;
+        height: 100%;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .service-card i {
+        font-size: 2.5rem;
+        color: var(--green);
+        margin-bottom: 15px;
+      }
+
+      /* ===============================
+  ABOUT
+================================= */
+      .about-section {
+        background:
+          linear-gradient(rgba(10, 61, 145, 0.75), rgba(10, 61, 145, 0.75)),
+          url("./bg-image.jpeg") center/cover no-repeat;
+        color: white;
+      }
+
+      .about-section h2 {
+        color: var(--orange);
+      }
+
+      .about-section p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 1.1rem;
+      }
+
+      /* ===============================
+  WHY CHOOSE US
+================================= */
+      #why-choose-us .card {
+        transition: 0.3s;
+        border-top: 5px solid var(--green);
+      }
+
+      #why-choose-us .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      #why-choose-us i {
+        font-size: 2.5rem;
+        color: var(--green);
+      }
+
+      /* ===============================
+  CONTACT
+================================= */
+      .contact-section {
+        background:
+          linear-gradient(rgba(10, 61, 145, 0.75), rgba(10, 61, 145, 0.75)),
+          url("./bg-image.jpeg") center/cover no-repeat;
+        color: white;
+      }
+
+      .contact-section h2 {
+        color: var(--orange);
+      }
+
+      .contact-info {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+      }
+
+      .contact-info i {
+        font-size: 1.5rem;
+        color: var(--orange);
+        margin-right: 10px;
+      }
+
+      /* ===============================
+  FORM
+================================= */
+      .btn-submit {
+        background: var(--green);
+        color: white;
+        font-weight: 600;
+      }
+
+      .btn-submit:hover {
+        background: #178c3d;
+      }
+
+      /* ===============================
+  FOOTER
+================================= */
+      footer {
+        background: var(--dark);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      /* ===============================
+  WHATSAPP BUTTON
+================================= */
+      .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: #25d366;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* ===============================
+  RESPONSIVE
+================================= */
+      @media (max-width: 768px) {
+        section {
+          padding: 60px 15px;
+        }
+
+        .hero-section h1 {
+          font-size: 2rem;
+        }
+
+        .hero-section p {
+          font-size: 1rem;
+        }
+
+        .whatsapp-btn {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand brand-text" href="#hero"
+          ><span style="color: var(--blue)">Raza</span>
+          <span style="color: var(--orange)">Digital</span>
+          <span style="color: var(--green)">Center</span></a
+        >
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why-choose-us">Why Choose Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apply">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <h1 data-aos="fade-down">Welcome to Raza Digital Center</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Your trusted Common Service Center for government, financial and
+          digital services
+        </p>
+        <a href="#services" class="btn btn-warning mt-3" data-aos="zoom-in"
+          >Explore Services</a
+        >
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Our Services</h2>
+          <p class="text-muted">
+            We offer a wide range of digital and government services.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card service-card text-center p-3">
+              <i class="bi bi-credit-card"></i>
+              <h5>PAN Card</h5>
+              <p>
+                New PAN, correction, reprint & PAN–Aadhaar linking services.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card service-card text-center p-3">
+              <i class="bi bi-person-badge"></i>
+              <h5>Aadhaar Services</h5>
+              <p>Aadhaar update, print, mobile linking & status check.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card service-card text-center p-3">
+              <i class="bi bi-heart-pulse"></i>
+              <h5>Ayushman Card</h5>
+              <p>Ayushman Bharat card registration & eligibility check.</p>
+            </div>
+          </div>
+
+          <!-- Ration Card -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-card-checklist" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Ration Card</h3>
+                <p class="card-text">
+                  New ration card apply, correction & download services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-4">
+          <!-- Income Certificate -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-cash-coin" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Income Certificate</h3>
+                <p class="card-text">
+                  Annual income certificate application & status tracking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Caste Certificate -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-people" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Caste Certificate</h3>
+                <p class="card-text">
+                  SC / ST / OBC caste certificate apply & correction service.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Residence / Domicile -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-house-check" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Residence Certificate</h3>
+                <p class="card-text">
+                  Domicile / residence certificate online application.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Bhulekh -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-map" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Bhulekh Services</h3>
+                <p class="card-text">
+                  Land record, Khasra–Khatauni & land details online.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-4">
+          <!-- Passport Photo -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-camera" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Passport Photo</h3>
+                <p class="card-text">
+                  Passport & visa size photo with correct background & size.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Online Forms -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-file-earmark-text" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Online Forms</h3>
+                <p class="card-text">
+                  Government forms, scholarships, exams & job applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Photocopy -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-printer" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Photocopy</h3>
+                <p class="card-text">
+                  Black & white / color photocopy and document printing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Banking -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-bank" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Banking Services</h3>
+                <p class="card-text">
+                  Cash withdrawal, deposit, money transfer & AEPS services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <!-- LPG Gas Services -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-fire" data-aos="fade-down"></i>
+                <h3 class="card-title h5">LPG Gas Services</h3>
+                <p class="card-text">
+                  LPG connection, subsidy check, KYC & gas booking services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Electricity Bill -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-lightning-charge" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Electricity Bill</h3>
+                <p class="card-text">
+                  Electricity bill payment, connection & complaint services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Ticket Booking -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-ticket-perforated" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Ticket Booking</h3>
+                <p class="card-text">
+                  Railway, bus & flight ticket booking at affordable charges.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Recharge -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-phone" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Mobile Recharge</h3>
+                <p class="card-text">
+                  All network prepaid & postpaid mobile recharge services.
+                </p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="row g-4 mt-4">
+          
+ <!-- Passport -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-globe" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Passport Services</h3>
+                <p class="card-text">
+                  New passport apply, renewal & appointment booking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Voter ID -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-person-check" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Voter ID Services</h3>
+                <p class="card-text">
+                  New voter ID apply, correction & status tracking.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PM Kisan -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-flower1" data-aos="fade-down"></i>
+                <h3 class="card-title h5">PM Kisan Yojana</h3>
+                <p class="card-text">
+                  Farmer registration, e-KYC & payment status check.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vriddha Pension -->
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+            <div class="card service-card h-100 text-center p-3">
+              <div class="card-body">
+                <i class="bi bi-person-hearts" data-aos="fade-down"></i>
+                <h3 class="card-title h5">Old Age Pension</h3>
+                <p class="card-text">
+                  Vriddha pension apply, renewal & payment status.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <h2>About Raza Digital Center</h2>
+        <p>
+          We help bridge the digital divide by providing fast, secure and
+          reliable government and digital services to citizens in Pilibhit,
+          Uttar Pradesh.
+        </p>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-choose-us">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Why Choose Us</h2>
+          <p class="text-muted">
+            Trusted, fast and professional digital services.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card text-center p-4">
+              <i class="bi bi-shield-check"></i>
+              <h5>Trusted Services</h5>
+              <p>Secure and verified government & banking services.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-center p-4">
+              <i class="bi bi-people"></i>
+              <h5>Expert Support</h5>
+              <p>Friendly guidance for all digital service needs.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card text-center p-4">
+              <i class="bi bi-speedometer2"></i>
+              <h5>Fast Processing</h5>
+              <p>Quick service delivery with minimal waiting time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2>Contact Us</h2>
+          <p>Reach out for any help or enquiries.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="contact-info">
+              <i class="bi bi-telephone-fill"></i>
+              <span>9719731698, 9897942847</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-info">
+              <i class="bi bi-envelope-fill"></i>
+              <span>mohdubaish999@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-info">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>
+                Near Zam Zam Hotel, Mahauf Road, Neoria Husainpur, Pilibhit,
+                Uttar Pradesh
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section id="apply">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h2 class="text-center mb-4">Feedback Us</h2>
+
+            <form id="enquiryForm" novalidate>
+              <div class="mb-3">
+                <label class="form-label">Name *</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Mobile *</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="mobile"
+                  pattern="^\d{10}$"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+
+              <button class="btn btn-submit w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Raza Digital Center. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/9719731698" target="_blank" class="whatsapp-btn">
+      <i class="bi bi-whatsapp" style="font-size: 28px"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({ duration: 1000, once: true });
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const form = document.getElementById("enquiryForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const mobile = document.getElementById("mobile").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !mobile) {
+          alert("Please fill required fields");
+          return;
+        }
+
+        const text = `Hello, my name is ${name}. Mobile: ${mobile}. Message: ${message}`;
+        window.open(
+          `https://wa.me/9719731698?text=${encodeURIComponent(text)}`,
+          "_blank",
+        );
+      });
+    </script>
+  </body>
+</html>
